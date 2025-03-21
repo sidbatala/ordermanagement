@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Manage Orders</h1>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="products.html">Products</a>
+            <a href="customers.html">Customers</a>
+        </nav>
+    </header>
+
+    <main>
+        <button id="addOrderBtn">Add Order</button>
+        <table id="orderTable">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer Name</th>
+                    <th>Status</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="orderList">
+                <!-- Orders will be listed here -->
+            </tbody>
+        </table>
+    </main>
+
+    <script src="js/order.js"></script>
+</body>
+</html>
