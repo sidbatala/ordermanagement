@@ -1,11 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Sample customers
     const customers = [
         { id: 1, name: 'John Doe', email: 'john@example.com', phone: '123-456-7890' },
         { id: 2, name: 'Jane Smith', email: 'jane@example.com', phone: '987-654-3210' }
     ];
 
-    // Function to render customers
     function renderCustomers() {
         const customerList = document.getElementById("customerList");
         customerList.innerHTML = "";
@@ -22,18 +20,15 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Add Customer Button
     document.getElementById("addCustomerBtn").addEventListener("click", function() {
-        const newCustomer = { id: customers.length + 1, name: 'New Customer', email: 'new@example.com', phone: '000-000-0000' };
+        const newCustomer = { id: customers.length + 1, name: 'New Customer', email: 'new@example.com', phone: '555-555-5555' };
         customers.push(newCustomer);
         renderCustomers();
     });
 
-    // Render initial customers
     renderCustomers();
 });
 
-// Edit Customer (just a simulation)
 function editCustomer(id) {
     alert('Editing customer with ID: ' + id);
 }
